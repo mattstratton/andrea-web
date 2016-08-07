@@ -4,6 +4,8 @@ languageCode = "en-us"
 title = "Andrea E. Javor"
 theme = "grid-side"
 copyright = "Copyright &#169; by Andrea Javor"
+googleAnalytics = "UA-82136908-1"
+
 
 # The theme uses pagination for post, gallery, and project listings.
 #paginate = 12
