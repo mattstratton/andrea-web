@@ -4,3 +4,14 @@ build:
     - arjen/hugo-build:
         theme: grid-side
         flags: --buildDrafts=false
+deploy:
+  steps:
+    - script:
+        name: Install packages
+        code: |
+          apt-get update
+    - arjen/s3sync:
+        key-id: $KEY
+        key-secret: $SECRET
+        bucket-url: s3://www.andreaejavor.com
+        source-dir: public
